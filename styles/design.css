@@ -9,32 +9,43 @@ body {
 
   }
 
-.home {
-  /* home background image */
-  background-color:rgba(0, 0, 0, 0.2);
-}
-.attack {
-  /* attack background image */
-  background-color:rgba(0, 0, 0, 0.2);
+@media (prefers-color-scheme: light){
+  /* light mode for body of the pages (not nav and cards)*/
+  .home, .attack, .bully, .scam, .hack {
+    /* home background image */
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  /*light card*/
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f1f1f1;
+  }
+
+  
 }
 
-.bully {
-  /* bully background image */
-  background-color:rgba(0, 0, 0, 0.2);
+@media (prefers-color-scheme: dark){
+  /* light mode for body of the pages (not nav and cards)*/
+  .home, .attack, .bully, .scam, .hack {
+    background-color: #333333;
+  }
+
+  .head, .caption {
+    color: #ffffff;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 #0099ff;
+    background-color: #333333;
+    color: #ffffff;
+
+  }
+
+  
 }
 
-.scam {
-  background-color:rgba(0, 0, 0, 0.2);
-}
 
-.hack {
-  background-color:rgba(0, 0, 0, 0.2);
-}
-
-footer {
-    text-align: center;
-    justify-content: center;
-}
 
 .head, .caption {
   text-align: center;
@@ -127,8 +138,7 @@ footer {
   
   /* Style the counter cards */
   .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
     text-align: center;
-    background-color: #f1f1f1;
+    
   }
